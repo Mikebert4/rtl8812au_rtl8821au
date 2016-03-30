@@ -6,7 +6,7 @@ EXTRA_CFLAGS += -Wall
 #EXTRA_CFLAGS += -Werror
 #EXTRA_CFLAGS += -pedantic
 #EXTRA_CFLAGS += -Wshadow -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wmissing-prototypes
-EXTRA_CFLAGS += -Werror=incompatible-pointer-types
+#EXTRA_CFLAGS += -Werror=incompatible-pointer-types
 
 EXTRA_CFLAGS += -Wno-unused-variable
 EXTRA_CFLAGS += -Wno-unused-value
@@ -41,7 +41,7 @@ CONFIG_SDIO_HCI = n
 CONFIG_GSPI_HCI = n
 ########################## Features ###########################
 CONFIG_MP_INCLUDED = y
-CONFIG_POWER_SAVING = y
+CONFIG_POWER_SAVING = n
 CONFIG_USB_AUTOSUSPEND = n
 CONFIG_HW_PWRP_DETECTION = n
 CONFIG_WIFI_TEST = n
@@ -53,7 +53,7 @@ CONFIG_EXT_CLK = n
 CONFIG_TRAFFIC_PROTECT = y
 CONFIG_LOAD_PHY_PARA_FROM_FILE = y
 CONFIG_CALIBRATE_TX_POWER_BY_REGULATORY = n
-CONFIG_CALIBRATE_TX_POWER_TO_MAX = n
+CONFIG_CALIBRATE_TX_POWER_TO_MAX = y
 CONFIG_RTW_ADAPTIVITY_EN = disable
 CONFIG_RTW_ADAPTIVITY_MODE = normal
 CONFIG_SIGNAL_SCALE_MAPPING = n
